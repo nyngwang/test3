@@ -18,7 +18,12 @@ scene.add(cube)
 function animate() {
   requestAnimationFrame(animate)
   renderer.render(scene, camera)
-  cube.rotation.x += 0.05
+  // cube.rotation.x += 0.05
   cube.rotation.y += 0.05
 }
 animate()
+
+// webpack hot module replacement
+if (module.hot) {
+  module.hot.accept()
+}
