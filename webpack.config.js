@@ -9,4 +9,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js', // `name` 會是上面 `entry[key]` 的 key
   },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    port: 8080,
+  },
 }
