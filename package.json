@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "build": "webpack",
-    "server": "npx live-server",
-    "lint": "npx eslint"
+    "server": "live-server",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
