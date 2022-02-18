@@ -1,3 +1,5 @@
+import * as THREE from 'three'
+
 console.log('aksjfksdjfk')
 
 const scene = new THREE.Scene()
