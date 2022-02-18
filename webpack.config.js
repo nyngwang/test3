@@ -14,14 +14,20 @@ module.exports = {
     static: {
       directory: path.resolve(__dirname, 'dist'),
     },
+    watchFiles: ['public'],
     hot: true,
     port: 8080,
+  },
+  module: {
+    rules: [
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+    ],
   },
   plugins: [
     new htmlWebpackPlugin({
       title: 'Testing htmlWebpackPlugin',
       filename: 'index.html',
-      template: path.resolve(__dirname, 'src/index.html'),
+      template: path.resolve(__dirname, 'public/index.html'),
     }),
   ],
 }
