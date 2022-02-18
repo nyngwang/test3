@@ -2,6 +2,7 @@
   "name": "test3",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --watch",
@@ -11,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/nyngwang/test3.git"
   },
-  "author": "",
+  "author": "Ning Wang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nyngwang/test3/issues"
