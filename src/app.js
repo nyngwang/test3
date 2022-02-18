@@ -1,22 +1,21 @@
 import * as THREE from 'three'
 
-console.log('aksjfksdjfk')
-
-const scene = new THREE.Scene()
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+console.log('hello world')
 
 const renderer = new THREE.WebGLRenderer()
 renderer.setSize(window.innerWidth, window.innerHeight)
 document.body.appendChild(renderer.domElement)
+const scene = new THREE.Scene()
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
 
 const geometry = new THREE.BoxGeometry()
 const material = new THREE.MeshBasicMaterial({
-  color: 0xa2d2ff,
+  color: 0xd4a373,
 })
 
 const cube = new THREE.Mesh(geometry, material)
 scene.add(cube)
-camera.position.z = 6
+camera.position.z = 3
 
 function animate() {
   requestAnimationFrame(animate)
