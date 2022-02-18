@@ -1,8 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  // 跑 webpack-dev-server 預設會是 `'development'`
-  // mode: 'development', // 用 src map 來知道問題來源在哪
+  mode: 'development', // 用 src map 來知道問題來源在哪
   entry: {
     main: path.resolve(__dirname, 'src/app.js'), // `__dirname` is the current directory.
   },
