@@ -2,16 +2,14 @@
 ==
 
 
+hi bitch
+
 
 ## TODO
 
-
-
-
-
-
-
-## DONE
-
+- [x] import `three.js` with ES module syntax
+  - [x] have a question closed on stackoverflow
+  - [x] Under stand moduel.exports
+  - [x] setup webpack
 
 
