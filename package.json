@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "build": "webpack",
+    "watch": "webpack --watch",
     "server": "live-server",
     "lint": "eslint"
   },
