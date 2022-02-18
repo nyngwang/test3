@@ -1,4 +1,5 @@
 const path = require('path')
+const htmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development', // 用 src map 來知道問題來源在哪
@@ -16,4 +17,11 @@ module.exports = {
     hot: true,
     port: 8080,
   },
+  plugins: [
+    new htmlWebpackPlugin({
+      title: 'Testing htmlWebpackPlugin',
+      filename: 'index.html',
+      template: path.resolve(__dirname, 'src/index.html'),
+    }),
+  ],
 }
