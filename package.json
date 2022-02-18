@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "npx live-server",
-    "js": "nodemon .",
+    "build": "webpack",
+    "server": "npx live-server",
     "lint": "npx eslint"
   },
   "repository": {
