@@ -16,6 +16,7 @@ module.exports = {
     },
     watchFiles: ['public'],
     hot: true,
+    open: true,
     port: 8080,
   },
   module: {
