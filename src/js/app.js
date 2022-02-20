@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import style from '../main.css'
+import '../main.css'
 import Comp from './comp'
 
 console.log('hello world')
