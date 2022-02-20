@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import style from '../main.css'
+import Comp from './comp.js'
 
 console.log('hello world')
 
@@ -50,6 +51,13 @@ window.addEventListener('mousemove', (pos) => {
   )
   // console.log('(pageX, pageY)', pos.pageX, pos.pageY)
 })
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Comp/>
+  </React.StrictMode>,
+  document.getElementsByClassName('test')[0],
+)
 
 // webpack hot module replacement
 // if (module.hot) {
