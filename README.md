@@ -13,6 +13,15 @@ hi this is a practice
 - [x] setup webpack
   - [x] watch mode auto-build
   - [x] hot module replacement via webpack-dev-server
-  - 
+  - [x] to write jsx in js
+    - [x] know why it should be called react-jsx (hint: react, react-dom)
+    - [x] know why babel is needed
+    - [x] know why webpack babel-loader is needed
+    - [x] know why eslint-plugin-react is needed
+      - [x] know why `"plugin:react/recommended"` is needed
+      - [ ] know why `"plugin:react/jsx-runtime"` is needed
+      - [x] know how to override rules
+      - [x] know how to pre-define/assume globals for `webpack.providePlugin`
+
 
 
