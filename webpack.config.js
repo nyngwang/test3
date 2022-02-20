@@ -1,5 +1,6 @@
 const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'development', // 用 src map 來知道問題來源在哪
@@ -23,6 +24,17 @@ module.exports = {
   module: {
     rules: [
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+      { test: /\.(svg|ico|png|jpe?g|gif)$/, type: 'asset/resource' },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            cacheCompression: false,
+          },
+        },
+      },
     ],
   },
   plugins: [
@@ -30,6 +42,10 @@ module.exports = {
       title: 'Testing htmlWebpackPlugin',
       filename: 'index.html',
       template: path.resolve(__dirname, 'src/index.html'),
+    }),
+    new webpack.ProvidePlugin({
+      React: 'react',
+      ReactDOM: 'react-dom',
     }),
   ],
 }
