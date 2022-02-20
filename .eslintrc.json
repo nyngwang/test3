@@ -9,7 +9,9 @@
   },
   "rules": {
     "semi": ["error", "never"],
+    "quotes": ["error", "single"],
     "react/jsx-no-undef": ["error", { "allowGlobals": true }],
+    "react/jsx-indent": ["error", 2, { "checkAttributes": true, "indentLogicalExpressions": true }],
     "no-console": "off"
   },
   "globals": {
