@@ -7,10 +7,14 @@ hi this is a practice
 
 ## TODO
 
-- [x] import `three.js` with ES module syntax
-  - [x] have a question closed on stackoverflow
-  - [x] Under stand `module.exports`
-- [x] setup webpack
+
+- important
+  - [ ] change `.eslintrc.json` to js syntax, and add some comments for options
+- Three.js
+  - [x] import `three.js` with ES module syntax
+    - [x] Under stand `module.exports`
+  - [ ] how to set transparent canvas color
+- Webpack
   - [x] watch mode auto-build
   - [x] hot module replacement via webpack-dev-server
   - [x] to write jsx in js
@@ -22,5 +26,7 @@ hi this is a practice
       - [ ] know why `"plugin:react/jsx-runtime"` is needed
       - [x] know how to override rules
       - [x] know how to pre-define/assume globals for `webpack.providePlugin`
-- [ ] change `.eslintrc.json` to js syntax
+- Style
+  - [ ] should review the newest/simplest way to align elements by css3
+  - [ ] should figure out how to **REALLY** _initialize_ those margin/border/padding
 
