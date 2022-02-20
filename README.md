@@ -22,6 +22,5 @@ hi this is a practice
       - [ ] know why `"plugin:react/jsx-runtime"` is needed
       - [x] know how to override rules
       - [x] know how to pre-define/assume globals for `webpack.providePlugin`
-
-
+- [ ] change `.eslintrc.json` to js syntax
 
