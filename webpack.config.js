@@ -4,7 +4,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: 'development', // 用 src map 來知道問題來源在哪
   entry: {
-    main: path.resolve(__dirname, 'src/app.js'), // `__dirname` is the current directory.
+    main: path.resolve(__dirname, 'src/js/app.js'), // `__dirname` is the current directory.
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -14,7 +14,7 @@ module.exports = {
     static: {
       directory: path.resolve(__dirname, 'dist'),
     },
-    watchFiles: ['public'],
+    watchFiles: ['src'],
     hot: true,
     open: true,
     port: 8080,
@@ -28,7 +28,7 @@ module.exports = {
     new htmlWebpackPlugin({
       title: 'Testing htmlWebpackPlugin',
       filename: 'index.html',
-      template: path.resolve(__dirname, 'public/index.html'),
+      template: path.resolve(__dirname, 'src/index.html'),
     }),
   ],
 }
