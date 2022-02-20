@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import style from '../main.css'
-import Comp from './comp.js'
+import Comp from './comp'
 
 console.log('hello world')
 
