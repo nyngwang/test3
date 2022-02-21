@@ -3,6 +3,9 @@ const imgUrl = 'https://upload.wikimedia.org/wikipedia/commons/a/a5/Moe_anime_gi
 export default function MyComp() {
   return (
     <>
+      <div>
+        {'# Hello World'}
+      </div>
       <img src={imgUrl} width="700" alt="apple logo"/>
     </>
   )

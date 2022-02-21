@@ -2,11 +2,12 @@ canvas {
   margin-bottom: -4px;
 }
 
-.test {
+#app {
   background: black;
-  color: blue;
+  color: white;
   font-size: 90px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: flex-end;
 }

@@ -54,7 +54,7 @@ window.addEventListener('mousemove', (pos) => {
 
 ReactDOM.render(
   <Comp/>,
-  document.getElementsByClassName('test')[0],
+  document.getElementById('app'),
 )
 
 // webpack hot module replacement
