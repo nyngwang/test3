@@ -15,7 +15,6 @@
     "no-console": "off"
   },
   "globals": {
-    "React": true,
     "ReactDOM": true
   }
 }

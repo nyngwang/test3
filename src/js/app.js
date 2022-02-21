@@ -53,9 +53,7 @@ window.addEventListener('mousemove', (pos) => {
 })
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Comp/>
-  </React.StrictMode>,
+  <Comp/>,
   document.getElementsByClassName('test')[0],
 )
 

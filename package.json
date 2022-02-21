@@ -20,7 +20,7 @@
   "homepage": "https://github.com/nyngwang/test3#readme",
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@babel/preset-react": "^7.16.7",
+    "@babel/plugin-transform-react-jsx": "^7.17.3",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.6.0",
     "eslint": "^8.9.0",
@@ -34,7 +34,6 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "three": "^0.137.5"
   }
